@@ -17,6 +17,7 @@ metadata:
 spec:
   replicas: 3
   selector:
+   matchLabels:
     app: springboot
   template:
     metadata:
@@ -64,6 +65,7 @@ metadata:
 spec:
   replicas: 3
   selector:
+   matchLabels:
     app: mongo
   template:
     metadata:
