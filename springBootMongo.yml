@@ -10,11 +10,12 @@ data:
 ---
 # Replication Controller for springapp
 apiVersion: v1
-kind: ReplicationController
+#kind: ReplicationController
+kind: Deployment
 metadata:
   name: spring-controller
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     app: springboot
   template:
@@ -57,10 +58,11 @@ spec:
 # Mongo RC with host path Volume
 apiVersion: v1
 kind: ReplicationController
+kind: Deployment
 metadata:
   name: mongo-controller
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     app: mongo
   template:
