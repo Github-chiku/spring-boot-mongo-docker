@@ -9,7 +9,7 @@ data:
   password: mongodb@123
 ---
 # Replication Controller for springapp
-apiVersion: app/v1
+apiVersion: apps/v1
 #kind: ReplicationController
 kind: Deployment
 metadata:
@@ -56,7 +56,7 @@ spec:
     app: springboot
 ---
 # Mongo RC with host path Volume
-apiVersion: app/v1
+apiVersion: apps/v1
 #kind: ReplicationController
 kind: Deployment
 metadata:
