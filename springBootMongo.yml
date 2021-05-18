@@ -58,14 +58,14 @@ spec:
 ---
 # Mongo RC with host path Volume
 apiVersion: apps/v1
-#kind: ReplicationController
-kind: Deployment
+kind: ReplicationController
+#kind: Deployment
 metadata:
   name: mongo-controller
 spec:
-  replicas: 3
+  replicas: 1
   selector:
-   matchLabels:
+#   matchLabels:
     app: mongo
   template:
     metadata:
